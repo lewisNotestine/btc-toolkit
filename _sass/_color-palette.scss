@@ -5,7 +5,7 @@
  */
 
  // Generates a color pallet from a main branding color
- $palette-brand: #48A14F;
+ $palette-brand: #48A14E;
 
 // Structure
 .color-palette {
@@ -48,6 +48,9 @@
 	&.swatch-brand {
 		background: $palette-brand;
 	}
+	&.swatch-brand-compliment {
+		background: #CD5E5B;
+	}
 	&.swatch-brand-lightest {
 		background: lighten($palette-brand, 40%);
 	}
@@ -66,19 +69,25 @@
 	&.swatch-brand-darkest {
 		background: darken($palette-brand, 40%);
 	}
-	&.swatch-brand-compliment {
-		background: adjust-hue($palette-brand, 180);
-	}
-	&.swatch-brand-compliment-adjacent-left {
-		background: adjust-hue($palette-brand, 180 - 90);
-	}
-	&.swatch-brand-compliment-adjacent-right {
-		background: adjust-hue($palette-brand, 180 + 90);
-	}
-	&.swatch-brand-adjacent {
-		background: adjust-hue($palette-brand, 60);
+	&.swatch-brand-adjacent-left {
+		background: #97BD55;
 	}
 	&.swatch-brand-adjacent-right {
-		background: adjust-hue($palette-brand, 120);
+		background: #387C79;
+	}
+	&.swatch-triad-left {
+		background: #A84B7A;
+	}
+	&.swatch-triad-right {
+		background: #CD8E5B;
+	}
+	&.swatch-tetrad-left {
+		background: #CD8E5B;
+	}
+	&.swatch-tetrad-center {
+		background: #387C79;
+	}
+	&.swatch-tetrad-right {
+		background: #CD5E5B;
 	}
 }

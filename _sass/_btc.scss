@@ -1,0 +1,83 @@
+// Beyond the Curtain Styles
+
+.jumbotron {
+	text-align: center;
+	.container {
+		min-height:300px;
+		position: relative;
+	}
+}
+.highlights {
+	div {
+		text-align: center;
+	}
+}
+.section {
+	text-align: center;
+}
+.browse-mods > div {
+	border: solid 1px #ccc;
+	text-align: center;
+}
+// Veil 
+
+.veil {
+	background-color: #ccc;
+	text-align: center;
+	min-height: 350px;
+	padding-top:75px;
+}
+
+body {
+	// background: url(../images/capital-bldg.jpg) no-repeat top center fixed;
+	margin-top: 100px;
+}
+.row {
+	// background: #fff;
+}
+.mods {
+	div {
+		border: solid 1px #ccc;
+		min-height: 150px;
+		text-align: center;
+	}
+}
+
+// Viz
+
+#chart {
+  height: 500px;
+  font: 13px sans-serif;
+}
+.node rect {
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+  stroke-width: 0;
+}
+.node text {
+  text-shadow: 0 1px 0 #fff;
+}
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+
+// footer
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}

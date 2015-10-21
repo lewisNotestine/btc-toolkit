@@ -19,15 +19,6 @@
 	border: solid 1px #ccc;
 	text-align: center;
 }
-// Veil 
-
-.veil {
-	// background: #D3DEEB url(../images/capital-bldg.jpg) no-repeat 50% -315px;
-	background: #D3DEEB;
-	text-align: center;
-	min-height: 350px;
-	padding-top:75px;
-}
 
 .chart {
 	background: #ffc;
@@ -35,12 +26,60 @@
 	position: relative;
 }
 
+.breadcrumb {
+	margin-left:0;
+}
+
 body {
-	// background: url(../images/capital-bldg.jpg) no-repeat top center fixed;
-	margin-top: 100px;
+	margin-top: 75px;
+}
+// .parallax-container {
+// 	position: relative;
+// 	border: solid 1px #fcc;
+// 	height: 300px;
+// }
+// .capital-bg {
+// 	background: #fff url(../images/capital-bldg-grn.png) repeat 50% 0 fixed;
+// 	min-height: 300px;
+// 	position: absolute;
+// 	top:0;
+// 	width:100%;
+// 	.capital-section {
+// 		height: 458px;
+// 		position: absolute;
+// 		text-align: center;
+// 		top: 0;
+// 		margin: 0 auto;
+// 	}
+// }
+// .veil-bg {
+// 	background: #fff url(../images/capital-bldg.png) repeat 50% 0;
+// 	min-height: 300px;
+// 	position: absolute;
+// 	top:0;
+// 	width: 100%;
+// 	.veil-section {
+// 		height: 458px;
+// 		position: absolute;
+// 		text-align: center;
+// 		top: 0;
+// 		margin: 0 auto;
+// 		width: 100%;
+// 	}
+// }
+.hero {
+	text-align: center;
+	padding-top:125px;
+}
+.veil-section {
+	height: 400px;
+	background-image: url(../images/capital-bldg-bw.png);
+  background-position: 50% -10%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .row {
-	// background: #fff;
 	margin: 15px auto;
 }
 .mods {

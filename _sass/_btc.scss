@@ -73,11 +73,12 @@ body {
 }
 .veil-section {
 	height: 400px;
-	background-image: url(../images/capital-bldg-bw.png);
-  background-position: 50% -10%;
+	background-color: #ccc;
+	background-image: url(../images/capital-bldg-bw-2.png);
+  background-position: 50% 200px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  // background-size: cover;
 }
 .row {
 	margin: 15px auto;

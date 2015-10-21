@@ -22,10 +22,17 @@
 // Veil 
 
 .veil {
-	background-color: #ccc;
+	// background: #D3DEEB url(../images/capital-bldg.jpg) no-repeat 50% -315px;
+	background: #D3DEEB;
 	text-align: center;
 	min-height: 350px;
 	padding-top:75px;
+}
+
+.chart {
+	background: #ffc;
+	display: block;
+	position: relative;
 }
 
 body {
@@ -34,12 +41,20 @@ body {
 }
 .row {
 	// background: #fff;
+	margin: 15px auto;
 }
 .mods {
-	div {
+	margin:25px auto;
+	a {
+		display: block;
 		border: solid 1px #ccc;
-		min-height: 150px;
 		text-align: center;
+		border-radius: 3px;
+		padding: 25px 5px;
+	}
+	.h3 {
+		display: block;
+		text-transform: uppercase;
 	}
 }
 
@@ -80,4 +95,58 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #f5f5f5;
+}
+
+// D3
+
+.node rect {
+  cursor: move;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+
+.link:hover {
+  stroke-opacity: .5;
+}
+
+
+.counties {
+  fill: none;
+}
+
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+
+.q0-9 { fill:rgb(247,251,255); }
+.q1-9 { fill:rgb(222,235,247); }
+.q2-9 { fill:rgb(198,219,239); }
+.q3-9 { fill:rgb(158,202,225); }
+.q4-9 { fill:rgb(107,174,214); }
+.q5-9 { fill:rgb(66,146,198); }
+.q6-9 { fill:rgb(33,113,181); }
+.q7-9 { fill:rgb(8,81,156); }
+.q8-9 { fill:rgb(8,48,107); }
+
+.search-results {
+	margin-left: 0;
+	li {
+		margin-bottom: 18px;
+	}
+	a {
+		color: #666;
+	}
 }

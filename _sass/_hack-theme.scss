@@ -134,6 +134,7 @@
   border-radius: $navbar-border-radius;
   $shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 5px rgba(0,0,0,.075);
   @include box-shadow($shadow);
+  background: #64BCBB;
 
   .navbar-nav > .open > a,
   .navbar-nav > .active > a {
@@ -143,7 +144,12 @@
 }
 .navbar-brand,
 .navbar-nav > li > a {
-  text-shadow: 0 1px 0 rgba(255,255,255,.25);
+  // text-shadow: 0 1px 0 rgba(255,255,255,.25);
+  color: #fff !important;
+}
+
+.navbar-brand {
+  margin-top:5px;
 }
 
 // Inverted navbar
@@ -159,7 +165,8 @@
 
   .navbar-brand,
   .navbar-nav > li > a {
-    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    // text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    color: #fff;
   }
 }
 

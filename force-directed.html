@@ -1,0 +1,40 @@
+---
+layout: btc
+title: force-directed
+permalink: /force-directed/
+---
+<style>
+svg { font: 9px sans-serif; }
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+line { stroke: #fff; }
+text.active { fill: red; font-size: 13px; font-weight: 900; letter-spacing: -.05em;}
+</style>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>{{ page.title }}</h1>
+			<div id="matrix"></div>
+			<script src="{{ site.baseurl }}/javascripts/fd-graphutil.js"></script>
+			<script>
+			var graph;
+			d3.json("{{ site.baseurl }}/data/doc_cooccurrence.json", function(error, json) {
+			    if (error) return console.warn(error);
+			    graph = json;
+			    draw_force_directed_graph(graph, 1000, 600, "div#matrix",
+			        function (group_num) { var groups = ["", "Whig", "Democratic", "Republican", "Democratic-Republican", "Federalist"]; return groups[group_num]; },
+			        function (name) { return name.substring(0,4) + "\n" + name.substring(5,30); }
+			    );
+			});
+			</script>
+
+			</script>
+		</div>
+	</div>
+</div>

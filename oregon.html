@@ -3,21 +3,43 @@ layout: btc
 title: Oregon
 permalink: /oregon/
 ---
+<ol class="breadcrumb">
+  <li><a href="{{ site.baseurl }}/home/">Home</a></li>
+  <li class="active">{{ page.title }}</li>
+</ol>
 <div class="container">
 	<div class="row mods">
-		<h1>Oregon State Summary</h1>
-		<div class="col-md-6">
-			<span class="h3">$295.4m</span>
-			<span>Raised</span>
+		<h1>{{ page.title }}</h1>
+		<h4>Nature of Committee: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</h4><br>
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<span class="h3">$295.4m</span>
+					<span>Raised</span>
+				</div>
+			</div>
 		</div>
-		<div class="col-md-6">
-			<span class="h3">$295.4m</span>
-			<span>Spent</span>
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<span class="h3">$24</span>
+					<span>Spent</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<span class="h3">$249</span>
+					<span>Voter Acquisition</span>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<h2>Who is giving?</h2>
+			<h3>Who is giving? <small>(who are the donors?)</small></h3>
+			<p>This visualization is calculated by total dollars, not total people.</p>
 			<div id="who-is-giving"></div>
 			<script type="text/javascript">
 			function drawBarChart() {
@@ -32,13 +54,16 @@ permalink: /oregon/
 				myChart.draw();
 				});
 			}
-		// drawBarChart();
+		drawBarChart();
 		</script>  
+		<p>[ detail view ]</p>
+		<p><small>( disclaimer about why grass roots are not here )</small></p>
 	</div>
 </div>
 <div class="row">
 	<div class="col-md-12">
 		<h3>How does the money flow?</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		<style>
 		.node rect {
 			cursor: move;
@@ -63,7 +88,6 @@ permalink: /oregon/
 		</style>
 		<p id="chart">
 
-			<!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
 			<script src="{{ site.baseurl }}/javascripts/sankey.js"></script>
 			<script>
 			// function drawSankey() {
@@ -173,6 +197,7 @@ permalink: /oregon/
 <div class="row">
 	<div class="col-md-12">
 		<h3>When are they raising and spending?</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		<div id="raising-spending-chart"></div>
 		<script type="text/javascript">
 		function drawLineChart() {
@@ -197,8 +222,9 @@ permalink: /oregon/
 
 <div class="row">
 	<div class="col-md-12">
-		<h3>Is the money local?</h3>
-
+		<h3>Where does the money come from?</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		
 		<div id="money-map"></div>
 
 		<script>

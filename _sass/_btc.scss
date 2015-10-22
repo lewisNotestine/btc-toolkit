@@ -73,13 +73,19 @@ body {
 }
 .veil-section {
 	height: 400px;
-	background-color: #ccc;
-	background-image: url(../images/capital-bldg-bw-2.png);
-  background-position: 50% 200px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  // background-size: cover;
+	color: #fff;
+	background: #ccc url(../images/SenateCarpet.jpg) repeat fixed;
 }
+// .veil-section {
+// 	height: 400px;
+// 	background-color: #ccc;
+// 	background-image: url(../images/capital-bldg-bw-2.png);
+// 	background-image: url(../images/SenateCarpet.jpg);
+//   background-position: 50% 200px;
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+//   background-size: cover;
+// }
 .row {
 	margin: 15px auto;
 }

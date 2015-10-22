@@ -12,9 +12,8 @@ permalink: /candidates/
 					<tr>
 						<th>Name</th>
 						<th>Party Affiliation</th>
-						<th>Grassroots</th>
-						<th>Local</th>
 						<th>Total</th>
+						<th>Source</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -22,9 +21,8 @@ permalink: /candidates/
 					<tr>
 						<td><a href="{{ site.baseurl }}/candidate/">{{ campaign.name }}</a></td>
 						<td>{{ campaign.party }}</td>
-						<td>{{ campaign.grassroots }}</td>
-						<td>{{ campaign.local }}</td>
 						<td>{{ campaign.total }}</td>
+						<td><span class="inlinebar">1,3,4,5</span></td>
 					</tr>
 					{% endfor %}
 				</tbody>
@@ -32,9 +30,14 @@ permalink: /candidates/
 		</div>
 	</div>
 </div>
+
 <script>
 	$(document).ready(function() {
 		$('#candidate-table').DataTable();
+		$('.inlinebar').sparkline('html', {
+			type: 'bar',
+			barWidth: 30,
+			barSpacing: 2
+		});
 	});
 </script>
-

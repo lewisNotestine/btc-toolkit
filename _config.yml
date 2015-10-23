@@ -3,7 +3,7 @@ title: UI Toolkit
 email: lewis.notestine@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   User interface toolkits are helpful for ensuring consistent quality in your web software products and encouraging rapid prototyping in agile software environments.
-baseurl: "btc-toolkit/" # the subpath of your site, e.g. /blog/
+baseurl: "boatsboatsboats/" # the subpath of your site, e.g. /blog/
 url: "http://lewisnotestine.github.io/" # the base hostname & protocol for your site
 twitter_username: flungus99x
 github_username:  lewisNotestine
